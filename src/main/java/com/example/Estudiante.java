@@ -14,8 +14,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @ToString(callSuper=true)
 
-public class Empleado extends Persona {
-	private Dpto departamento; 
-	private double salario;
-	
+public class Estudiante extends Persona {
+		private fac facultad;
+		private int totalAsiganturasMatriculadas;
 }
