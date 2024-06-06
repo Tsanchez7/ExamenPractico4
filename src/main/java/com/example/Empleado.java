@@ -17,5 +17,8 @@ import lombok.experimental.SuperBuilder;
 public class Empleado extends Persona {
 	private Dpto departamento; 
 	private double salario;
+	private String nombre; 
+	private int edad;
 	
+
 }

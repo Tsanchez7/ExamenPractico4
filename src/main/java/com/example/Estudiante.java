@@ -17,4 +17,6 @@ import lombok.experimental.SuperBuilder;
 public class Estudiante extends Persona {
 		private fac facultad;
 		private int totalAsiganturasMatriculadas;
+		private String nombre; 
+		private int edad;
 }

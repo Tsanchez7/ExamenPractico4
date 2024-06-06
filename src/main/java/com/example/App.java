@@ -68,6 +68,7 @@ public class App
 			sumatorioDeLosSalariosOtro +=e.getSalario();
 			totalGeneroOtro++;} 
 		}
+
 		
 		salarioPromedioHombres = sumatorioDeLosSalariosHombre / totalGeneroHombre;
 		salarioPromedioMujer = sumatorioDeLosSalariosMujer / totalGeneroMujer;
@@ -78,7 +79,71 @@ public class App
 		System.out.println("Salario promedio de otros Géneros: " +salarioPromedioOtro);
 		
 		/*POR DPTO */	
+		
+		double sumatorioSalarioRRHH= 0.0;
+		double sumatorioSalarioINFORMATICA= 0.0;
+		double sumatorioSalarioJURIDICO = 0.0;
+	
+		
+		int totalSalarioRRHH = 0;
+		int totalSalarioINFORMATICA = 0;
+		int totalSalarioJURIDICO = 0;
+		
+		double salarioPromedioRRHH = 0.0;
+		double salarioPromedioINFORMATICA = 0.0;
+		double salarioPromedioJURIDICO= 0.0;
+		
+		for (Empleado e : empleados) 
+		{
+			if (e.getDepartamento().equals(Dpto.RRHH)) {
+			sumatorioSalarioRRHH +=e.getSalario();
+			totalSalarioRRHH++;}
+	
+		else if (e.getDepartamento().equals(Dpto.INFORMATICA)) {
+			sumatorioSalarioINFORMATICA +=e.getSalario();
+			totalSalarioINFORMATICA++;}
+		else {
+			sumatorioSalarioJURIDICO+=e.getSalario();
+			totalSalarioJURIDICO++;} 
+		}
+		
+
+		salarioPromedioRRHH = sumatorioSalarioRRHH / totalSalarioRRHH;
+		salarioPromedioINFORMATICA = sumatorioSalarioINFORMATICA / totalSalarioINFORMATICA;
+		salarioPromedioJURIDICO = sumatorioSalarioJURIDICO / totalSalarioJURIDICO;
+	
+		
+		System.out.println("Salario promedio en RRHH: " +salarioPromedioRRHH);
+		System.out.println("Salario promedio en INFORMATICA: " +salarioPromedioINFORMATICA);
+		System.out.println("Salario promedio en JURIDICO: " +salarioPromedioJURIDICO);
+	
+		
+		/* PUNTO 6- CREAR UN ARRAY QUE PERMITA ALMACENAR OBJETOS EMPLEADOS Y ESTUDIANTES*/
+		/*Esta creado ya el constructor de empleado
+
+		Empleado emp1=new Empleado String ("Luis", "50");
+		Empleado emp2=new Empleado (String "Lorena", "38");}
+    
+		
+		Estudiante[] estudiante= {
+		Estudiante arr[]= {
+				new Estudiante("Tamara","41"), 
+				new Estudiante("Carlos","34"), 
+				new Estudiante ("Pepe")};
+		};
+			
+		for (int i=0; i <arr.legth;i++)
+	
+		{}
+			System.out.println(arr[i]);
+		
+	
+		}*/
+				
+		    
+		
     }			
 };
     
+
 
