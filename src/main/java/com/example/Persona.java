@@ -14,6 +14,10 @@ public class Persona {
 	private String nombre;
 	private String primerApellido;
 	private String segundoApellido;
-	private Genero genero; 
+	private Genero genero;
+	public double getSalario() {
+		// TODO Auto-generated method stub
+		return 0;
+	} 
 	
 }

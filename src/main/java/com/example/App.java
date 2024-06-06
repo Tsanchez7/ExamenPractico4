@@ -35,11 +35,11 @@ public class App
 				.build()
 				
 		};
-			 for (Empleado empleado : empleados)
+			 for (Empleado empleado : empleados) {
 		    	System.out.println(empleado);
-    }
+			 }
 				/*Recorrer el array de empleados y que aparezca en consola el Salario promedio 
-				 * agrupado por cada dpto y genero del empleado*/
+				  agrupado por cada dpto y genero del empleado*/
     
 		/*POR GENERO */
     	double sumatorioDeLosSalarios = 0.0;
@@ -55,35 +55,30 @@ public class App
 		double salarioPromedioMujer = 0.0;
 		double salarioPromedioOtro = 0.0;
 		
-		for (Persona p : personas) 
-			
-		
-		{if (p.getGenero().equals(Genero.HOMBRE)) {
-			sumatorioDeLosSalariosHombre +=p.getSalario();
+		for (Empleado e : empleados) 
+		{
+			if (e.getGenero().equals(Genero.HOMBRE)) {
+			sumatorioDeLosSalariosHombre +=e.getSalario();
 			totalGeneroHombre++;}
 	
-		else if (p.getGenero().equals(Genero.MUJER))
-			sumatorioDeLosSalariosMujer +=p.getSalario();
+		else if (e.getGenero().equals(Genero.MUJER)) {
+			sumatorioDeLosSalariosMujer +=e.getSalario();
 			totalGeneroMujer++;}
 		else {
-			sumatorioDeLosSalariosOtro +=p.getSalario();
-			totalGeneroOtro++;
-			
-		} }
+			sumatorioDeLosSalariosOtro +=e.getSalario();
+			totalGeneroOtro++;} 
+		}
 		
 		salarioPromedioHombres = sumatorioDeLosSalariosHombre / totalGeneroHombre;
-		salarioPromedioMujeres = sumatorioDeLosSalariosMujeres / totalGeneroMujer;
-		salarioPromedioOtros = sumatorioDeLosSalariosOtro / totalGeneroOtro;
+		salarioPromedioMujer = sumatorioDeLosSalariosMujer / totalGeneroMujer;
+		salarioPromedioOtro = sumatorioDeLosSalariosOtro / totalGeneroOtro;
 		
 		System.out.println("Salario promedio de los Hombres: " +salarioPromedioHombres);
 		System.out.println("Salario promedio de las Mujeres: " +salarioPromedioMujer);
 		System.out.println("Salario promedio de otros Géneros: " +salarioPromedioOtro);
 		
-		/*POR DPTO */
-		
-	
-		
-    			
-		};
+		/*POR DPTO */	
+    }			
+};
     
 
