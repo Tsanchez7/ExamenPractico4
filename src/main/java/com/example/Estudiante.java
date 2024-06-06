@@ -12,10 +12,11 @@ import lombok.experimental.SuperBuilder;
 @Data
 @EqualsAndHashCode(callSuper=true)
 @SuperBuilder
-@ToString(callSuper=true)
+@ToString(callSuper=True)
 
-public class Empleado extends Persona {
-	private Dpto departamento; 
-	private double salario;
-	
+public class Estudiante extends Persona {
+
+ private fac facultad;
+ private int totalAsignaturasMatriculadas;
+ 
 }
